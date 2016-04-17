@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:id="@+id/createelection_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_createelection_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/nameofElection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Election Name"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/placeofElection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Place of Election"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_election_date"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_election_from_time"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/election_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_election_to_time"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/election_date"
+                android:layout_width="match_parent"
+                android:text="Date "
+                android:visibility="gone"
+                android:layout_alignLeft="@+id/election_to_time"
+                android:layout_alignStart="@+id/election_to_time"
+                android:layout_alignEnd="@+id/election_from_time"
+                android:layout_alignRight="@+id/election_from_time"
+                android:layout_marginTop="10sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/election_to_time"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:id="@+id/election_from_time"
+                android:layout_width="match_parent"
+                android:text="From Time "
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/createelection_form"
+                android:visibility="gone"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/election_to_time"
+                android:layout_width="match_parent"
+                android:text="To Time "
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/election_from_time"
+                android:layout_alignStart="@+id/election_from_time"
+                android:layout_alignEnd="@+id/election_from_time"
+                android:layout_alignRight="@+id/election_from_time"
+                android:layout_below="@+id/election_from_time"
+                android:visibility="gone"
+                android:layout_marginTop="10dp" />
+
+
+            <Button
+                android:id="@+id/createElection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Election"
+                android:textColor="#ffffff"
+                android:background="#FF4081"
+                android:layout_marginTop="36sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
+
